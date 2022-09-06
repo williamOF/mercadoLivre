@@ -7,11 +7,20 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controller = {
+
 	index: (req, res) => {
-		// Do the magic
+		
+		res.render('index.ejs',{products})
+
 	},
 	search: (req, res) => {
-		// Do the magic
+
+		const id = req.params.id
+
+		const produto = products.find(p=> p.id == id)
+
+		res.reder('products.ejs',{products:produto})
+
 	},
 };
 
