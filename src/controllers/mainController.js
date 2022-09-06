@@ -10,7 +10,7 @@ const controller = {
 
 	index: (req, res) => {
 		
-		res.render('index.ejs',{products})
+		res.render('index.ejs',{products,toThousand})
 
 	},
 	search: (req, res) => {
