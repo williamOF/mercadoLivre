@@ -15,11 +15,10 @@ const controller = {
 	},
 	search: (req, res) => {
 
-		const id = req.params.id
-
-		const produto = products.find(p=> p.id == id)
-
-		res.reder('products.ejs',{products:produto})
+		let element = req.query.keywords;
+		let searchResult = products.filter(product => product.name.toLowerCase().includes(element));	
+		
+		res.render('results', {products:searchResult, element , toThousand})
 
 	},
 };
