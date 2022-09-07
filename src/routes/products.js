@@ -9,7 +9,7 @@ const productsController = require('../controllers/productsController');
 router.get('/', productsController.index); 
 
 /*** CREATE ONE PRODUCT ***/ 
-router.get('/products/', productsController.create); 
+router.get('/create', productsController.create); 
 router.post('/', productsController.store); 
 
 
