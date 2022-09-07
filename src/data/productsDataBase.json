@@ -1,14 +1,5 @@
 [
     {
-        "id": 2,
-        "name": "Macbook Pro 2022",
-        "price": 500,
-        "discount": 3,
-        "category": "in-sale",
-        "description": "Macbook Pro 2019 Mpxq2ll/a Intel Core i5 2.3 Ghz 8gb RAM 128gb SSD 13.3 Retina Display Apple Brand New Original. Importado dos EUA. Entregue com a fatura de compra para ter a garantia do fabricante.",
-        "image": "img-macbook-pro-2019.jpg"
-    },
-    {
         "id": 3,
         "name": "Samsung Galaxy S10",
         "price": 72999,
@@ -69,15 +60,6 @@
         "price": 11399,
         "discount": 0,
         "image": "img-apple-magic-keyboard.jpg",
-        "category": "visited"
-    },
-    {
-        "id": 10,
-        "name": "Mouse Sem Fio Logitech M280",
-        "description": "Uso mais confortável para a mão direita graças ao formato contornado com revestimento de borracha macia. A bateria dura até 18 meses, graças ao projeto de economia de energia. O M280 entra automaticamente em modo de repouso quando não está em uso.",
-        "price": 1200,
-        "discount": 10,
-        "image": "img-mouse-logitech.jpg",
         "category": "visited"
     },
     {
@@ -142,5 +124,23 @@
         "category": "visited",
         "description": " Máquina de café Dolce Gusto Lumio. A máquina de café Dolce Gusto Lumio é uma variedade automática que chegou com um design radical a que estamos acostumados da Dolce Gusto, e neste post contamos tudo o que você precisa saber sobre ela, desde suas características técnicas até a qualidade das cápsulas ou preço.  ",
         "image": "img-cafetera-moulinex.jpg"
+    },
+    {
+        "id": 2,
+        "name": "chinelo",
+        "price": "2506",
+        "discount": 3,
+        "category": "in-sale",
+        "description": "  Macbook Pro 2019 Mpxq2ll/a Intel Core i5 2.3 Ghz 8gb RAM 128gb SSD 13.3 Retina Display Apple Brand New Original. Importado dos EUA. Entregue com a fatura de compra para ter a garantia do fabricante.    ",
+        "image": "img-macbook-pro-2019.jpg"
+    },
+    {
+        "id": 10,
+        "name": "mause",
+        "price": "800",
+        "discount": "10",
+        "category": "in-sale",
+        "description": "   Uso mais confortável para a mão direita graças ao formato contornado com revestimento de borracha macia. A bateria dura até 18 meses, graças ao projeto de economia de energia. O M280 entra automaticamente em modo de repouso quando não está em uso.      ",
+        "image": "img-mouse-logitech.jpg"
     }
 ]
