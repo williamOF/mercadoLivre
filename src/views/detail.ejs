@@ -9,33 +9,36 @@
 
 	<!-- product detail -->
 	<div class="container products-wrapper">
+		<% const p = product %> 
 		<div class="row">
 			<div class="col-12">
-				<h2 class="products-title">Detalhe do produto: NOME DO PRODUTO</h2>
+				<h2 class="products-title">Detalhe do produto: <%= p.name %> </h2>
 			</div>
 		</div>
 		<div class="product-detail">
 			<div class="row">
+				
+				<% let FinalPrice = (p.price*((100 -p.discount)/100)).toFixed(0) %>
 				<div class="col-12 col-lg-8">
-					<img src="/images/products/¿?" alt="product image" class="product-detail-img">
+					<img src="/images/products/<%= p.image %> " alt="product image" class="product-detail-img">
 					<p class="product-detail-description">
-						PRODUCT DESCRIPTION
+						<%= p.description %> 
 					</p>
 				</div>
 				<div class="col-12 col-lg-4">
 					<article class="product-detail-info">
-						<h2 class="product-detail-title">PRODUCT NAME</h2>
+						<h2 class="product-detail-title"><%=  %> </h2>
 						
 							<p class="product-detail-price small">
-								<span>$PRICE</span>
+								<span>$<%= toThousand(p.price)  %> </span>
 								/
-								<b>DISCOUNT% OFF</b>
+								<b><%= p.discount %>  %OFF</b>
 							</p>
 							<p class="product-detail-price">
-								$FINAL PRICE
+								$<%= toThousand(FinalPrice) %> 
 							</p>
 							<p class="product-detail-price">
-								$PRICE
+								$<%= toThousand(p.price)  %> 
 							</p>
 
 						<ul class="actions-list">
@@ -52,8 +55,8 @@
 						<a href="#" class="buy-now-button">COMPRAR AGORA</a>
 						<hr>
 
-						<a href="/products/edit/¿?" class="action-button edit">EDITAR PRODUTO</a>
-						<form action="/products/delete/¿¿" method="POST" style="display: inline-flex">
+						<a href="/products/edit/<%= p.id  %>  " class="action-button edit">EDITAR PRODUTO</a>
+						<form action="/products/delete/<%=p.id%>?_method=DELETE" method="POST" style="display: inline-flex">
 							<button type="submit" class="action-button delete">APAGAR</button>
 						</form>
 					</article>

@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const middlewaresProd = require ('../middlewares/criateProduct')
 
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -14,7 +15,10 @@ const controller = {
 
 	// Detail - Detail from one product
 	detail: (req, res) => {
-		// Do the magic
+		const id = req.params.id
+		const product = products.find(p=> p.id == id)
+
+		res.render('detail',{product,toThousand})
 	},
 
 	// Create - Form to create
@@ -24,23 +28,38 @@ const controller = {
 	
 	// Create -  Method to store
 	store: (req, res) => {
-		console.log('add com sucesso')
+		const body = req.body
+
+		middlewaresProd.criate(body)
 		
 		res.redirect('/products/')
 	},
 
 	// Update - Form to edit
 	edit: (req, res) => {
-		// Do the magic
+		const id = req.params.id
+
+		const product = products.find(p=> p.id ==id)
+
+		res.render('product-edit-form.ejs',{product,toThousand})
 	},
 	// Update - Method to update
 	update: (req, res) => {
-		// Do the magic
+		const body = req.body
+		const id = req.params.id
+
+		middlewaresProd.edit(body,id)
+
+		res.redirect('/products/')
 	},
 
 	// Delete - Delete one product from DB
 	destroy : (req, res) => {
-		// Do the magic
+		const id = req.params.id
+
+		middlewaresProd.delete(id)
+
+		res.redirect('/')
 	}
 };
 
