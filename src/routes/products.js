@@ -1,6 +1,12 @@
+
 // ************ Require's ************
 const express = require('express');
 const router = express.Router();
+const path = require('path')
+
+//  upload import
+const upload = require('../index')
+
 
 // ************ Controller Require ************
 const productsController = require('../controllers/productsController');
@@ -9,8 +15,8 @@ const productsController = require('../controllers/productsController');
 router.get('/', productsController.index); 
 
 /*** CREATE ONE PRODUCT ***/ 
-router.get('/create', productsController.create); 
-router.post('/', productsController.store); 
+router.get('/create',productsController.create); 
+router.post('/',upload.single('imageFile'),productsController.store); 
 
 
 /*** GET ONE PRODUCT ***/ 

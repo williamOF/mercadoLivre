@@ -142,5 +142,14 @@
         "category": "in-sale",
         "description": "   Uso mais confortável para a mão direita graças ao formato contornado com revestimento de borracha macia. A bateria dura até 18 meses, graças ao projeto de economia de energia. O M280 entra automaticamente em modo de repouso quando não está em uso.      ",
         "image": "img-mouse-logitech.jpg"
+    },
+    {
+        "name": "computador",
+        "price": "2506",
+        "discount": "15",
+        "category": "in-sale",
+        "description": "Com o Mercado Livre Cash, você tem prestações sem juros com cartão de crédito ou dinheiro nos pontos de pagamento. E é sempre seguro!Com o Mercado Livre Cash, você tem prestações sem juros com cartão de crédito ou dinheiro nos pontos de pagamento. E é sempre seguro!Com o Mercado Livre Cash, você tem prestações sem juros com cartão de crédito ou dinheiro nos pontos de pagamento. E é sempre seguro!",
+        "id": 17,
+        "image": "1662600172004computador.webp"
     }
 ]

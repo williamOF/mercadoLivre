@@ -20,14 +20,17 @@ const seNaoVazioSubistitua = (original,modificacao)=>{
 }
 
 module.exports = {
-    criate:(objeto)=>{
+    criate:(objeto,imgName)=>{
        let id = products.length+1
        objeto.id = id
-       objeto.image = new Date()
+       objeto.image = imgName
        products.push(objeto)
        salvar(products)
     },
     delete:(id)=>{
+        const buscar = products.find(p=> p.id == id)
+        
+
         const novoArr = products.filter(p=>p.id !=id)
         salvar(novoArr)
     },

@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
+const upload = require('..');
 const middlewaresProd = require ('../middlewares/criateProduct')
+
 
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -29,8 +31,9 @@ const controller = {
 	// Create -  Method to store
 	store: (req, res) => {
 		const body = req.body
+		const imgname = req.file.filename
 
-		middlewaresProd.criate(body)
+		middlewaresProd.criate(body,imgname)
 		
 		res.redirect('/products/')
 	},
