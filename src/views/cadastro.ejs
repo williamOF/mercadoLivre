@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--inclue head-->
+<%- include('partials/head',{title:"criar Conta"}) %> 
+<body>
+<!--inclue headNavBar-->
+<%- include('partials/headerNavBar') %>    
+<article>
+    <div>
+        <form action="/cadastro/" method="post">
+            <input type="text" name="name" id="nome" placeholder="Insira o nome completo">
+            <input type="email" name="email" id="email" placeholder="Digite seu email">
+            <input type="number" name="phone" id="tell" placeholder="Informe seu telefone de contato">
+            <input type="password" name="password" id="senha" placeholder="Digite uma senha">
+            <button>Cadastrar</button>
+        </form>
+    </div>
+</article>
+
+
+<!--inclue Footer-->
+<%- include('partials/footer') %> 
+</body>
+</html>

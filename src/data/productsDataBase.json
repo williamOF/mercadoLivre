@@ -1,32 +1,5 @@
 [
     {
-        "id": 3,
-        "name": "Samsung Galaxy S10",
-        "price": 72999,
-        "discount": 25,
-        "category": "in-sale",
-        "description": "Experiência excepcional de visualização. Assista suas séries e filmes favoritos na melhor definição, com cores brilhantes e detalhes precisos em todo o seu conteúdo, e desfrute ainda mais do melhor entretenimento graças a sua tela grande e amplos ângulos de visão.",
-        "image": "img-samsung-galaxy-s10.jpg"
-    },
-    {
-        "id": 4,
-        "name": "Geladeira frost free Whirlpool WRM45A",
-        "description": "Aproveite o frescor de sua comida e guarde-a de maneira prática e conveniente em seu refrigerador Whirlpool, o protagonista de sua cozinha. Seu sistema frost free evita a geração de gelo e lhe permitirá preservar o sabor e as propriedades nutricionais de seus produtos, enquanto seu freezer de 86 litros de capacidade facilitará a distribuição e a arrumação de seus alimentos congelados, para que você não tenha que se preocupar com a falta de espaço.",
-        "price": 47900,
-        "discount": 10,
-        "image": "img-heladera-whirpool.jpg",
-        "category": "in-sale"
-    },
-    {
-        "id": 5,
-        "name": "Nikon Reflex D3500 - Kit",
-        "description": "Inclui a câmera D3500, a lente de zoom AF-P DX NIKKOR 18-55mm e a lente de zoom AF-P DX NIKKKOR 70-300mm super objetiva compacta. Ambas as lentes focalizam rápida e silenciosamente, tornando-as ideais para filmagens de vídeo com praticamente nenhum ruído de acionamento.",
-        "price": 53000,
-        "discount": 20,
-        "image": "img-camara-nikon.jpg",
-        "category": "in-sale"
-    },
-    {
         "id": 6,
         "name": "Ar Condicionado 3200w Frio / Calor",
         "description": "AIR SPLIT 3200W TACA-3200WCHSA/KC FC TCL. Capacidade fria 3200 Watts. Capacidade de aquecimento 3300 Watts. Potência elétrica (W) frio 996. Potência elétrica (W) calor 1028. Eficiência energética calor C. Eficiência energética frio A. Frigoríficos 2750 UNIDADE INDOOR. Peso bruto 10kg. Peso líquido 7 kg",
@@ -151,5 +124,45 @@
         "description": "Com o Mercado Livre Cash, você tem prestações sem juros com cartão de crédito ou dinheiro nos pontos de pagamento. E é sempre seguro!Com o Mercado Livre Cash, você tem prestações sem juros com cartão de crédito ou dinheiro nos pontos de pagamento. E é sempre seguro!Com o Mercado Livre Cash, você tem prestações sem juros com cartão de crédito ou dinheiro nos pontos de pagamento. E é sempre seguro!",
         "id": 17,
         "image": "1662600172004computador.webp"
+    },
+    {
+        "id": 3,
+        "name": "Samsung Galaxy S10",
+        "price": 72999,
+        "discount": 25,
+        "category": "in-sale",
+        "description": "Experiência excepcional de visualização. Assista suas séries e filmes favoritos na melhor definição, com cores brilhantes e detalhes precisos em todo o seu conteúdo, e desfrute ainda mais do melhor entretenimento graças a sua tela grande e amplos ângulos de visão.",
+        "image": "img-samsung-galaxy-s10.jpg",
+        "score": 1
+    },
+    {
+        "id": 4,
+        "name": "Geladeira frost free Whirlpool WRM45A",
+        "description": "Aproveite o frescor de sua comida e guarde-a de maneira prática e conveniente em seu refrigerador Whirlpool, o protagonista de sua cozinha. Seu sistema frost free evita a geração de gelo e lhe permitirá preservar o sabor e as propriedades nutricionais de seus produtos, enquanto seu freezer de 86 litros de capacidade facilitará a distribuição e a arrumação de seus alimentos congelados, para que você não tenha que se preocupar com a falta de espaço.",
+        "price": 47900,
+        "discount": 10,
+        "image": "img-heladera-whirpool.jpg",
+        "category": "in-sale",
+        "score": 9
+    },
+    {
+        "id": 5,
+        "name": "computador",
+        "price": "1500",
+        "discount": "25",
+        "category": "in-sale",
+        "description": " Inclui a câmera D3500, a lente de zoom AF-P DX NIKKOR 18-55mm e a lente de zoom AF-P DX NIKKKOR 70-300mm super objetiva compacta. Ambas as lentes focalizam rápida e silenciosamente, tornando-as ideais para filmagens de vídeo com praticamente nenhum ruído de acionamento.  ",
+        "image": "img-camara-nikon.jpg",
+        "score": 1
+    },
+    {
+        "name": "mause",
+        "price": "1500",
+        "discount": "25",
+        "category": "in-sale",
+        "description": "",
+        "id": 18,
+        "image": "166316405164761FnLJfIU6L._AC_SY450_.jpg",
+        "score": 3
     }
 ]

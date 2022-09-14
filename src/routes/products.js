@@ -7,6 +7,8 @@ const path = require('path')
 //  upload import
 const upload = require('../index')
 
+//middlewares.requires
+const score = require('../middlewares/score')
 
 // ************ Controller Require ************
 const productsController = require('../controllers/productsController');
@@ -20,7 +22,7 @@ router.post('/',upload.single('imageFile'),productsController.store);
 
 
 /*** GET ONE PRODUCT ***/ 
-router.get('/detail/:id', productsController.detail); 
+router.get('/detail/:id',score ,productsController.detail); 
 
 /*** EDIT ONE PRODUCT ***/ 
 router.get('/edit/:id', productsController.edit); 
