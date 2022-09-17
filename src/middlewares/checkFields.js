@@ -24,6 +24,7 @@ const checkFields = (req,res,next)=>{
 
         //definindo a session usuario
         req.session.usuario = usuario
+        
         return next()
 }
 

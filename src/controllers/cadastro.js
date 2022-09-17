@@ -1,15 +1,12 @@
 const fs = require ('fs')
 const path = require ('path');
-const salvar = require('../middlewares/salvarJson');
+const toSave = require('../functions/saveProdutos');
 
 // ************ bcrypt - (don't touch) ************
 const bcrypt = require('bcrypt')
 
-
 const arquivo = path.join(__dirname, '../data/usuarios.json')
 const usuarios = JSON.parse(fs.readFileSync(arquivo, 'utf-8'));
-
-
 
 const controller = {
     view: (req,res)=>{
@@ -25,7 +22,7 @@ const controller = {
             phone,
         }
         usuarios.push(novoUser)
-        salvar(arquivo,usuarios)
+        toSave(arquivo,usuarios)
         
         res.redirect('/')
     }

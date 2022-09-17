@@ -1,6 +1,6 @@
 const auth = (req,res,next)=>{
-    const login = req.session.usuario
-    if(typeof(login)!= "undefined"){
+
+    if(typeof( req.session.usuario) != "undefined"){
         return next()
     }else{
         return res.send('você precisa estar logado para ter acesso')

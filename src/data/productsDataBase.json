@@ -1,15 +1,5 @@
 [
     {
-        "id": 4,
-        "name": "Geladeira frost free Whirlpool WRM45A",
-        "description": "Aproveite o frescor de sua comida e guarde-a de maneira prática e conveniente em seu refrigerador Whirlpool, o protagonista de sua cozinha. Seu sistema frost free evita a geração de gelo e lhe permitirá preservar o sabor e as propriedades nutricionais de seus produtos, enquanto seu freezer de 86 litros de capacidade facilitará a distribuição e a arrumação de seus alimentos congelados, para que você não tenha que se preocupar com a falta de espaço.",
-        "price": 47900,
-        "discount": 10,
-        "image": "img-heladera-whirpool.jpg",
-        "category": "in-sale",
-        "score": 9
-    },
-    {
         "name": "mause",
         "price": "1500",
         "discount": "25",
@@ -186,5 +176,15 @@
         "description": " Inclui a câmera D3500, a lente de zoom AF-P DX NIKKOR 18-55mm e a lente de zoom AF-P DX NIKKKOR 70-300mm super objetiva compacta. Ambas as lentes focalizam rápida e silenciosamente, tornando-as ideais para filmagens de vídeo com praticamente nenhum ruído de acionamento.  ",
         "image": "img-camara-nikon.jpg",
         "score": 2
+    },
+    {
+        "id": 4,
+        "name": "Geladeira frost free Whirlpool WRM45A",
+        "description": "Aproveite o frescor de sua comida e guarde-a de maneira prática e conveniente em seu refrigerador Whirlpool, o protagonista de sua cozinha. Seu sistema frost free evita a geração de gelo e lhe permitirá preservar o sabor e as propriedades nutricionais de seus produtos, enquanto seu freezer de 86 litros de capacidade facilitará a distribuição e a arrumação de seus alimentos congelados, para que você não tenha que se preocupar com a falta de espaço.",
+        "price": 47900,
+        "discount": 10,
+        "image": "img-heladera-whirpool.jpg",
+        "category": "in-sale",
+        "score": 10
     }
 ]

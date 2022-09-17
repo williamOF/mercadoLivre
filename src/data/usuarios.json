@@ -10,5 +10,11 @@
         "password": "$2b$10$HkRoVpNKOEsAmgY3hLzqKujfYbWEBLPdiki.VHqIV1HoyuQweTEdS",
         "email": "william.inves40@gmail.com",
         "phone": "11974926344"
+    },
+    {
+        "name": "alisson jhon",
+        "password": "$2b$10$Y/mEcBPW0D8kPFhFax/XKOc0R7bADFOa8aPZ3ojXtt6RGmVp9LNgi",
+        "email": "alisson@gmail.com",
+        "phone": ""
     }
 ]
