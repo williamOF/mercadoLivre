@@ -4,14 +4,24 @@
 <%- include('partials/head',{title:"criar Conta"}) %> 
 <body>
 <!--inclue headNavBar-->
+<link rel="stylesheet" href="/css/cadastro.css">
 <%- include('partials/headerNavBar') %>    
-<article>
-    <div>
+<article class="cdsBox">
+    <div class="corpo">
         <form action="/cadastro/" method="post">
-            <input type="text" name="name" id="nome" placeholder="Insira o nome completo">
-            <input type="email" name="email" id="email" placeholder="Digite seu email">
-            <input type="number" name="phone" id="tell" placeholder="Informe seu telefone de contato">
-            <input type="password" name="password" id="senha" placeholder="Digite uma senha">
+            <h1>Bem vindo !</h1>
+            <label for="nome">
+               Nome completo: <input type="text" name="name" id="nome" placeholder="Insira o nome completo">
+            </label>
+            <label for="email">
+                Email válido: <input type="email" name="email" id="email" placeholder="Digite seu email">
+            </label>
+            <label for="password">
+                Crie sua senha: <input type="password" name="password" id="senha" placeholder="Digite uma senha">
+            </label>
+            <label for="phone">
+                Telefone de contato: <input type="number" name="phone" id="tell" placeholder="Informe seu telefone de contato">
+            </label>
             <button>Cadastrar</button>
         </form>
     </div>

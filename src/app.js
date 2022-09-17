@@ -5,11 +5,20 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const methodOverride =  require('method-override'); // Passe para poder usar os métodos PUT e DELETE
+const session = require('express-session')
 
 // ************ express() - (don't touch) ************
 const app = express();
 
+
+
 // ************ Middlewares - (don't touch) ************
+
+app.use(session({
+  secret: "ProjectExpress",
+  resave: true,
+  saveUninitialized: true
+}))
 app.use(express.static(path.join(__dirname, '../public')));  // Necessário para os arquivos estáticos na pasta /public
 app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
@@ -21,19 +30,17 @@ app.use(methodOverride('_method')); // Para poder passar o method="POST" no form
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views')); // Define a localização da pasta das Views
 
-
-
 // ************ WRITE YOUR CODE FROM HERE ************
 // ************ Route System require and use() ************
 const mainRouter = require('./routes/main'); // Rotas main
 const productsRouter = require('./routes/products'); // Rotas /products
-const loginCadastro =require('./routes/loginCadastro')
+const usuarios = require('./routes/usuarios')
+const login = require('./routes/login')
 
 app.use('/', mainRouter);
 app.use('/products', productsRouter);
-app.use('/cadastro', loginCadastro)
-
-
+app.use('/cadastro', usuarios)
+app.use('/login' , login)
 
 // ************ DON'T TOUCH FROM HERE ************
 // ************ catch 404 and forward to error handler ************

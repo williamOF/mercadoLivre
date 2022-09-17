@@ -9,6 +9,7 @@ const upload = require('../index')
 
 //middlewares.requires
 const score = require('../middlewares/score')
+const auth = require('../middlewares/auth')
 
 // ************ Controller Require ************
 const productsController = require('../controllers/productsController');
@@ -17,7 +18,7 @@ const productsController = require('../controllers/productsController');
 router.get('/', productsController.index); 
 
 /*** CREATE ONE PRODUCT ***/ 
-router.get('/create',productsController.create); 
+router.get('/create', auth, productsController.create); 
 router.post('/',upload.single('imageFile'),productsController.store); 
 
 
@@ -25,7 +26,7 @@ router.post('/',upload.single('imageFile'),productsController.store);
 router.get('/detail/:id',score ,productsController.detail); 
 
 /*** EDIT ONE PRODUCT ***/ 
-router.get('/edit/:id', productsController.edit); 
+router.get('/edit/:id',auth ,productsController.edit); 
 router.put('/edit/:id', productsController.update); 
 
 

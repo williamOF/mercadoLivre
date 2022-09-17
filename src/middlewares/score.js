@@ -4,10 +4,8 @@ const path = require ('path');
 const arquivo = path.join(__dirname, '../data/productsDataBase.json')
 const products = JSON.parse(fs.readFileSync(arquivo, 'utf-8'));
 
-const salvar = (products)=>{
-    const njson = JSON.stringify(products,null , 4)
-    fs.writeFileSync(arquivo,njson)
-}
+//função para salvar arquivo json 2 parametros: 1° local do arquivo, 2° os dados para salvar
+const salvar = require('./salvarJson')
 
 const adicionarScore = (req, res ,next)=>{
     const id = req.params.id 
@@ -23,7 +21,7 @@ const adicionarScore = (req, res ,next)=>{
     }
     const novoArrjson = products.filter(p=> p.id != id)
     novoArrjson.push(product)
-    salvar(novoArrjson)
+    salvar(arquivo,novoArrjson)
     return next()
 }
 module.exports = adicionarScore

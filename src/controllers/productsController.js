@@ -1,7 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 const upload = require('..');
-const middlewaresProd = require ('../middlewares/criateProduct')
+
+// ************ FUNCTIONS REQUIRED - (don't touch) ************
+const criateProduct = require('../functions/criarProduto')
+const editarProduto = require('../functions/editarProduto')
+const removerProduto = require('../functions/removerProduto')
 
 
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
@@ -33,7 +37,7 @@ const controller = {
 		const body = req.body
 		const imgname = req.file.filename
 
-		middlewaresProd.criate(body,imgname)
+		criateProduct(body,imgname)
 		
 		res.redirect('/products/')
 	},
@@ -51,7 +55,7 @@ const controller = {
 		const body = req.body
 		const id = req.params.id
 
-		middlewaresProd.edit(body,id)
+		editarProduto(body,id)
 
 		res.redirect('/products/')
 	},
@@ -60,7 +64,7 @@ const controller = {
 	destroy : (req, res) => {
 		const id = req.params.id
 
-		middlewaresProd.delete(id)
+		removerProduto(id)
 
 		res.redirect('/')
 	}
